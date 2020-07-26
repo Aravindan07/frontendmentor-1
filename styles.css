@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: 0px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-div {
+  width: 50%;
+  height: fit-content;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0.5rem 1rem;
+}
+
+.image-part {
+  width: 40%;
+  height: auto;
+}
+.image-part img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.details-part {
+  width: 60%;
+  height: 100%;
+  padding: 30px;
+}
+
+span {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+p {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 15px 0px 0px 0px;
+  letter-spacing: 0.2px;
+  opacity: 0.7;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.share {
+  cursor: pointer;
+  position: relative;
+}
+
+.social-share {
+  width: 200px;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(210, 46%, 95%);
+  border-radius: 5px;
+  padding: 14px 20px;
+  font-size: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 45px;
+  right: 27%;
+  margin-right: -94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  visibility: hidden;
+  letter-spacing: 3.6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0.2rem 0.6rem;
+}
+
+.social-share img {
+  margin-left: 8px;
+  width: 15px;
+  height: 15px;
+}
+
+.social-share::after {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: " ";
+  border-top: 8px solid hsl(217, 19%, 35%);
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+}
+
+.author-name {
+  font-weight: 700;
+}
+
+.published-date {
+  display: block;
+  font-weight: 500;
+  color: hsl(212, 23%, 69%);
+  font-size: 13px;
+}
+
+.img-div {
+  border-radius: 50%;
+  width: fit-content;
+  background: hsl(210, 46%, 95%);
+  padding: 6px 6px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
