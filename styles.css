@@ -49,7 +49,7 @@ span {
 p {
   font-size: 13px;
   font-weight: 500;
-  margin: 15px 0px 0px 0px;
+  margin: 15px 0px;
   letter-spacing: 0.2px;
   opacity: 0.7;
 }
@@ -82,11 +82,11 @@ p {
   background-color: hsl(217, 19%, 35%);
   color: hsl(210, 46%, 95%);
   border-radius: 5px;
-  padding: 14px 20px;
+  padding: 16px 20px;
   font-size: 10px;
   position: absolute;
   z-index: 1;
-  bottom: 45px;
+  bottom: 50px;
   right: 27%;
   margin-right: -94px;
   display: flex;
@@ -115,6 +115,9 @@ p {
 
 .author-name {
   font-weight: 700;
+  margin: 0px;
+  opacity: 0.8;
+  letter-spacing: 0.6px;
 }
 
 .published-date {
@@ -135,8 +138,90 @@ p {
   font-size: 11px;
   text-align: center;
   position: fixed;
-  bottom: 10px;
+  bottom: 5px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 700px) {
+  .article-div {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-part {
+    width: 100%;
+    height: 40%;
+  }
+  .image-part img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .details-part {
+    width: 100%;
+    height: 60%;
+    padding: 30px 30px 20px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .author-name {
+    margin: 0px;
+    opacity: 0.8;
+  }
+  .author img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+  }
+  p {
+    margin-top: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    opacity: 0.7;
+  }
+
+  .img-div {
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+    z-index: 2;
+  }
+
+  .share {
+    position: unset;
+  }
+
+  .social-share {
+    width: 100%;
+    height: 55px;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+    border-radius: 0px 0px 5px 5px;
+    padding: 16px 20px;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    visibility: hidden;
+    letter-spacing: 3.6px;
+    box-shadow: unset;
+  }
+
+  .social-share::after {
+    display: none;
+  }
+
+  .social-share img {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+  }
 }
